@@ -3,6 +3,25 @@
 # ruby 4-hashes.rb
 
 # Hashes are an important type of thing in Ruby,
+
+profile = {
+    "name" => "Ben",
+"location" => {"city" => "Chicago", "state" => "IL"}
+"timeline" => {
+"status" => "Teaching ENTR-451", "occured_at" => "6:30 pm"
+"status" => "still teaching...", "occured_at" => "7:30 pm"
+}
+puts profile
+
+
+puts profile["name"]
+puts profle["status"]
+puts profile["location"]["city"]
+
+profile["status"] = "still teaching..."
+profile["phone"] = 444 556 6996
+puts profile
+
 # mostly because you can use them to store any type of data, no
 # matter how complex.
 
@@ -14,7 +33,8 @@ me = { "name" => "Ben", "location" => "Chicago", "status" => "ENTR-924 at Kellog
 puts me
 
 # Accessing data from the hash
-
+puts profile["name"]
+puts profile["status"]
 # Now that the hash is defined, we can access the attributes:
 name = me["name"]
 puts name # Ben
